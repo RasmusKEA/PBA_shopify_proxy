@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
-const PORT = 3005;
+const PORT = 3000;
 
 app.get("/getUnpublished", async (req, res) => {
   try {
@@ -111,5 +111,5 @@ app.post("/publishProduct/:productId", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Express server running on http://localhost:${PORT}`);
+  console.log(`Express server running on ${PORT}`);
 });
